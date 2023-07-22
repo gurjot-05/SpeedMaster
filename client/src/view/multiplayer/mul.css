@@ -1,0 +1,320 @@
+/* Custom CSS for the ProgressBar */
+.progress-bar-custom {
+  background-color: white;
+}
+
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@keyframes colorAnimation {
+  0% {
+    background-color: #007bff;
+  }
+  50% {
+    background-color: #ffc107;
+  }
+  80% {
+    background-color: #28a745;
+  }
+  100% {
+    background-color: #dc3545;
+  }
+}
+
+.progress-bar-custom.animated {
+  animation: colorAnimation 1s linear;
+}
+
+/* GameReview.css */
+.review-status {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  width: 150%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+.game-review {
+  margin-top: 20px;
+}
+
+.review-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.review-table th,
+.review-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.review-table th {
+  background-color: #555;
+  color: black;
+}
+
+.review-table tr:nth-child(odd) {
+  background-color: #a9a9a9;
+}
+
+.review-table tr:nth-child(even) {
+  background-color: #818589;
+}
+
+.review-table td:first-child {
+  font-weight: bold;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.countdown {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.card-container {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.home-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form .form-group {
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+form .form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+form .form-control:focus {
+  outline: none;
+  border-color: white;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+form .btn-primary {
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form .btn-primary:enabled:hover {
+  background-color: #28a745;
+}
+
+form .btn-primary:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+/* GameEngine.css */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.prompt-container {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.player-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.player-info-container span {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.player-info-container .progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.player-info-container .progress-bar .progress {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+/* Player container */
+.player-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+  align-items: baseline;
+  justify-content: center;
+}
+
+/* Progress bar container */
+.progress-contain {
+  width: 400px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 20px;
+  overflow: hidden;
+}
+
+/* Player name */
+.player-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  color: gray;
+}
+
+/* Progress bar */
+.progress-bar {
+  flex: 1;
+}
+
+/* WPM */
+.player-wpm {
+  font-size: 18px;
+  font-weight: bold;
+  color: gray;
+}
+
+.game-code-container {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* DisplayWords.css */
+.prompt-container {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.user-input br {
+  margin: 10px 0;
+}
+
+.user-input .form-control {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  width: 100vh;
+  height: 20px;
+}
+
+.user-input .form-control:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.word {
+  white-space: nowrap;
+}
+
+.character {
+  padding: 2px;
+}
+
+.character.correct {
+  color: green;
+}
+
+.character.incorrect {
+  color: red;
+}
+
+.character.current {
+  background-color: #007bff;
+  color: #fff;
+}
