@@ -1,0 +1,24 @@
+.clock-display {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 135px;
+  /* border: 2px solid #333; */
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-timer {
+
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+}
