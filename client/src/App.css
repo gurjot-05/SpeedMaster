@@ -1,0 +1,79 @@
+body, h1, p, button {
+  margin: 0;
+  padding: 0;
+}
+
+.div {
+  display: flex;
+  flex-direction: inherit;
+  align-items: center;
+}
+
+body {
+  background-image: url("Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.game-menu {
+  text-align: center;
+}
+
+.home-button-container {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+
+.home-button {
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+}
+
+.home-button:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #45a049;
+}
+
+.game-mode-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  margin: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.game-mode-button:hover {
+  background-color: #45a049;
+}
+
+.game-name {
+  font-family: 'Arial', sans-serif;
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-div {
+  display: flex;
+  flex-direction: row;
+}
